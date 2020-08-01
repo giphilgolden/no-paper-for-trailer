@@ -356,6 +356,19 @@ marketSearchButton.addEventListener("click", function() {
         Info30.innerHTML+=("30 - Wrong Pallet QTY")
     }
 
+    let Number30S = 2100
+    let iOba30 = 1
+    while (iOba30 <= 50) {
+        if (marketTextArea.value.includes((Number30S * iOba30)+" 	0 	COR11101")) {
+            Info30.innerHTML += "<li>30 OBA- " + (iOba30) + " </li>"
+        }
+        iOba30 += 1
+    } 
+
+    if ((marketTextArea.value.includes("COR11101")) && (Info30.innerHTML===(""))) {
+        Info30.innerHTML+=("30 OBA - Wrong Pallet QTY")
+    }
+
     let Number40 = 2400
     let i40 = 1
     while (i40 <= 50) {
@@ -393,6 +406,19 @@ marketSearchButton.addEventListener("click", function() {
 
     if ((marketTextArea.value.includes("COR10866")) && (Info60.innerHTML===(""))) {
         Info60.innerHTML+=("60 - Wrong Pallet QTY")
+    }
+
+    let Number60S = 1600
+    let iOba60 = 1
+    while (iOba60 <= 50) {
+        if (marketTextArea.value.includes((Number60S * iOba60)+" 	0 	COR11103 ")) {
+            Info60.innerHTML += "<li>60 OBA - " + (iOba60) + " </li>"
+        }
+        iOba60 += 1
+    } 
+
+    if ((marketTextArea.value.includes("COR11103")) && (Info60.innerHTML===(""))) {
+        Info60.innerHTML+=("60 OBA- Wrong Pallet QTY")
     }
 
     let Number70 = 1680
