@@ -11,7 +11,7 @@ h1 {
    margin: 3px;
    color: blue;
 background-image: linear-gradient(180deg, black, yellow, black);
-
+font-size: 125px;
 }   
 
 img {
